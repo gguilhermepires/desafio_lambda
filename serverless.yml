@@ -1,0 +1,16 @@
+service: desafio-crud
+
+provider:
+  name: aws
+  runtime: python3.6
+  region: us-east-1
+  iamRoleStatements:
+    - Effect: "Allow"
+      Action:
+        - "rds:*"
+        - "rds-db:connect"
+      Resource: "*"
+
+functions:
+  handler:
+    handler: handler.lambda_handler

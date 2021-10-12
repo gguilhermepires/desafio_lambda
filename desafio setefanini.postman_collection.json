@@ -1,0 +1,405 @@
+{
+	"info": {
+		"_postman_id": "42ba1843-0336-4be3-a819-3e6427bc1280",
+		"name": "desafio setefanini",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "busca id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"acao\": \"selecionaId\",\n    \"id\": 10\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://bq7nzw4d26.execute-api.us-east-1.amazonaws.com/v1/usuarios",
+					"protocol": "https",
+					"host": [
+						"bq7nzw4d26",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"v1",
+						"usuarios"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "busca id",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"acao\": \"selecionaId\",\n    \"id\": \"10\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://bq7nzw4d26.execute-api.us-east-1.amazonaws.com/v1/usuarios",
+							"protocol": "https",
+							"host": [
+								"bq7nzw4d26",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"v1",
+								"usuarios"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 08 Oct 2021 11:34:06 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "55"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "x-amzn-RequestId",
+							"value": "82d89cbc-9c80-4085-865d-3625d41d3854"
+						},
+						{
+							"key": "x-amz-apigw-id",
+							"value": "G4vrTH6boAMFp4A="
+						},
+						{
+							"key": "X-Amzn-Trace-Id",
+							"value": "Root=1-61602cae-34fcd59a51c141e879a6fe3d;Sampled=0"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 10,\n    \"nome\": \"novo\",\n    \"idade\": 99,\n    \"cargo\": \"aaa\"\n}"
+				}
+			]
+		},
+		{
+			"name": "busca todos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"acao\": \"buscaTodos\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://bq7nzw4d26.execute-api.us-east-1.amazonaws.com/v1/usuarios",
+					"protocol": "https",
+					"host": [
+						"bq7nzw4d26",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"v1",
+						"usuarios"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "busca todos",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"acao\": \"buscaTodos\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://bq7nzw4d26.execute-api.us-east-1.amazonaws.com/v1/usuarios",
+							"protocol": "https",
+							"host": [
+								"bq7nzw4d26",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"v1",
+								"usuarios"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 08 Oct 2021 11:34:15 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "173"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "x-amzn-RequestId",
+							"value": "436becbd-d311-4fff-8ff5-908a8b639ca2"
+						},
+						{
+							"key": "x-amz-apigw-id",
+							"value": "G4vsqEIhoAMFecw="
+						},
+						{
+							"key": "X-Amzn-Trace-Id",
+							"value": "Root=1-61602cb7-2d3f823c146cc2b32f7cf065;Sampled=0"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"nome\": \"teste\",\n        \"idade\": 1,\n        \"cargo\": \"tes\"\n    },\n    {\n        \"id\": 10,\n        \"nome\": \"novo\",\n        \"idade\": 99,\n        \"cargo\": \"aaa\"\n    },\n    {\n        \"id\": 11,\n        \"nome\": \"teste\",\n        \"idade\": 10,\n        \"cargo\": \"teste\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "inserir",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"acao\": \"inserir\",\n  \"nome\": \"teste\",\n  \"idade\": 10,\n  \"cargo\": \"teste\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://bq7nzw4d26.execute-api.us-east-1.amazonaws.com/v1/usuarios",
+					"protocol": "https",
+					"host": [
+						"bq7nzw4d26",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"v1",
+						"usuarios"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "inserir",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"acao\": \"inserir\",\n  \"nome\": \"novo\",\n  \"idade\": 10,\n  \"cargo\": \"teste\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://bq7nzw4d26.execute-api.us-east-1.amazonaws.com/v1/usuarios",
+							"protocol": "https",
+							"host": [
+								"bq7nzw4d26",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"v1",
+								"usuarios"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 08 Oct 2021 11:35:06 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "12"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "x-amzn-RequestId",
+							"value": "8e10a829-9ebd-4507-b1ac-1932a549d369"
+						},
+						{
+							"key": "x-amz-apigw-id",
+							"value": "G4v0vE5moAMFaxQ="
+						},
+						{
+							"key": "X-Amzn-Trace-Id",
+							"value": "Root=1-61602cea-4996808d45b81fb45f5c289c;Sampled=0"
+						}
+					],
+					"cookie": [],
+					"body": "\"Adicionado\""
+				}
+			]
+		},
+		{
+			"name": "remover",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"acao\": \"excluirId\",\n  \"id\": 11\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://bq7nzw4d26.execute-api.us-east-1.amazonaws.com/v1/usuarios",
+					"protocol": "https",
+					"host": [
+						"bq7nzw4d26",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"v1",
+						"usuarios"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "remover",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"acao\": \"excluirId\",\n  \"id\": 11\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://bq7nzw4d26.execute-api.us-east-1.amazonaws.com/v1/usuarios",
+							"protocol": "https",
+							"host": [
+								"bq7nzw4d26",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"v1",
+								"usuarios"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 08 Oct 2021 11:37:10 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "22"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "x-amzn-RequestId",
+							"value": "0c2be300-d359-4c38-9922-f6af5dc1b23c"
+						},
+						{
+							"key": "x-amz-apigw-id",
+							"value": "G4wIEGNKIAMFiTw="
+						},
+						{
+							"key": "X-Amzn-Trace-Id",
+							"value": "Root=1-61602d66-789ca6b472696255671cca12;Sampled=0"
+						}
+					],
+					"cookie": [],
+					"body": "\"Removido com sucesso\""
+				}
+			]
+		}
+	]
+}
